@@ -1,0 +1,38 @@
+{
+  "name": "repo-clean",
+  "version": "0.1.0",
+  "description": "Make your repository look professional in 30 seconds.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "repo-clean": "bin/repo-clean"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build && node bin/repo-clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "repo",
+    "readme",
+    "license",
+    "cli",
+    "open-source"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourname/repo-clean.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourname/repo-clean/issues"
+  },
+  "homepage": "https://github.com/yourname/repo-clean#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

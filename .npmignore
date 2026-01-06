@@ -1,0 +1,5 @@
+src
+.github
+.vscode
+*.ts
+tsconfig.json
